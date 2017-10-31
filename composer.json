@@ -1,0 +1,23 @@
+{
+    "name": "borobudur/dci",
+    "type": "library",
+    "description": "Borobudur Dci Component",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iqbal Maulana",
+            "email": "iq.bluejack@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Borobudur\\Component\\Dci\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
