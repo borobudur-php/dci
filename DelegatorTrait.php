@@ -40,6 +40,8 @@ trait DelegatorTrait
     final protected function attach(object $data)
     {
         $this->instance = $data;
+
+        return $this;
     }
 
     /**

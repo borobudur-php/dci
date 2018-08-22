@@ -95,15 +95,14 @@ abstract class AbstractContext
              * @param string       $method
              * @param array        ...$args
              *
-             * @return object
+             * @return mixed
              */
-            private function invoke(AbstractRole $role, string $method, ...$args): object
+            private function invoke(AbstractRole $role, string $method, ...$args)
             {
                 $method = new ReflectionMethod(get_class($role), $method);
                 $method->setAccessible(true);
-                $method->invoke($role, ...$args);
 
-                return $role;
+                return $method->invoke($role, ...$args);
             }
         };
     }
